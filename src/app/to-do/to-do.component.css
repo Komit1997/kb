@@ -1,0 +1,13 @@
+.container{
+    height: 500px;
+    width: 700px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+span{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 300px;
+}
