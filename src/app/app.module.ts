@@ -8,6 +8,8 @@ import { CreateTaskComponent } from './create-task/create-task.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import{DragDropModule} from '@angular/cdk/drag-drop';
 import { EditComponent } from './edit/edit.component';
+import { TaskserviceService } from './taskservice.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { EditComponent } from './edit/edit.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    FormsModule,
+    ReactiveFormsModule
   
   ],
-  providers: [],
+  providers: [TaskserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

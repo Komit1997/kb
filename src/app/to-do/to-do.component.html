@@ -9,12 +9,12 @@
                 <div class="col-sm-4">
                     <h2>Open</h2>
 
-                  <div class="card" cdkDrag>
+                  <div class="card" cdkDrag *ngFor="let task of taskopen ">
                       
-                    <div class="card-body">
+                    <div class="card-body" >
                         
-                      <h5 class="card-title"> title 1 </h5>
-                      <p class="card-text">Description</p>
+                      <h5 class="card-title"> {{task.title}}</h5>
+                      <p class="card-text">{{task.description}}</p>
                       <h5>Status:Open </h5>
                       <a routerLink="../edit" class="btn btn-primary">Edit</a>
                     </div>
@@ -22,11 +22,11 @@
                 </div>
                 <div class="col-sm-4">
                     <h2>In-Progress</h2>
-                  <div class="card" cdkDrag>
-                    <div class="card-body">
+                  <div class="card" cdkDrag *ngFor="let task of taskInprogress">
+                    <div class="card-body" >
                         
-                      <h5 class="card-title">title 2 </h5>
-                      <p class="card-text">Description</p>
+                      <h5 class="card-title"> {{task.title}}</h5>
+                      <p class="card-text">{{task.description}}</p>
                       <h5>Status:In-progress</h5>
                       <a routerLink="../edit" class="btn btn-primary">Edit</a>
                     </div>
@@ -34,10 +34,11 @@
                 </div>
                 <div class="col-sm-4">
                     <h2>Completed</h2>
-                    <div class="card" cdkDrag>
-                      <div class="card-body">
-                        <h5 class="card-title">title 3</h5>
-                        <p class="card-text">Description</p>
+                    <div class="card" cdkDrag *ngFor="let task of taskCompleted ">
+                      <div class="card-body" >
+                        
+                        <h5 class="card-title"> {{task.title}}</h5>
+                        <p class="card-text">{{task.description}}</p>
                         <h5>Status:Completed</h5>
 
                         <a routerLink="../edit" class="btn btn-primary">Edit</a>

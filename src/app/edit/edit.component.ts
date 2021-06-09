@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-
+   task=[{title:"test", description:"developer", status:"Open"}]
   constructor() { }
 
   ngOnInit(): void {
